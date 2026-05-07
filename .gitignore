@@ -1,0 +1,4 @@
+jupyterlite/content/uk_lsoa_london_embeds_*.geojson
+jupyterlite/content/src_data
+__pycache__/
+.ipynb_checkpoints/

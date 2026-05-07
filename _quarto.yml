@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: ./docs
+  resources:
+    - "assets"
+  render:
+    - "Materials.qmd"
+    - "index.qmd"
+    - "CODE_OF_CONDUCT.md"
+    - "CONTRIBUTING.md"
+    - "02-Lab.ipynb"
+    - "jupyterlite/content/01-Semantic_similarity.ipynb"
+    - "jupyterlite/content/02-Change.ipynb"
+    - "jupyterlite/content/03-Predictive_modelling.ipynb"
+
+website:
+  title: "Imago Workshop on Satellite Embeddings"
+
+  page-footer:
+    center: |
+      [[Imago]{.green}](https://imago.ac.uk), part of the [[Smart Data Research UK]{.blue}](https://www.sdruk.ukri.org/) family.
+
+  repo-url: https://github.com/Imago-SDRUK/embeddings_workshop
+  repo-branch: main
+
+  search:
+    location: sidebar
+    type: overlay
+  sidebar:
+    style: floating
+    collapse-level: 1
+    tools:
+      - icon: github
+        href: https://github.com/Imago-SDRUK/embeddings_workshop
+    contents:
+      - index.qmd
+      - Materials.qmd
+      - text: Imago
+        href: https://imago.ac.uk
+
+format:
+  html:
+    theme:
+      - cosmo
+      - assets/imago.scss
+    include-in-header:
+      - text: |
+          <script defer src="https://events.imago.ac.uk/script.js" data-website-id="1d384e7c-c043-45bd-9404-abb364ffe9e0"></script>
+
+editor: visual
+
+# Website URL for reference
+url: https://imago-sdruk.github.io/embeddings_workshop/
+
