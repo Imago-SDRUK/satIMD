@@ -1,0 +1,39 @@
+# Materials
+
+## Content
+
+| Time | Session | `URL` |
+|------|--------|--------|
+| 13:45 – 14:00 | Embeddings Overview: _what are they and why should I care?_ | [Slides](slides/imago_embeddings_workshop.html) |
+| 14:00 – 14:15 | Interactive exploration of embeddings | [Imago Embedding Explorer](assets/imago-similarity-explorer.html) |
+| 14:15 – 14:35 | Semantic similarity `[P]` | [Notebook](jupyterlite/content/01-Semantic_similarity.ipynb), [![JupyterLite](https://gist.githubusercontent.com/xiaohk/9b9f7c8fa162b2c3bc3251a5c9a799b2/raw/a7fca1d0a2d62c2b49f60c0217dffbd0fe404471/lite-badge-launch-small.svg)](assets/jupyterlite/index.html) |
+| 14:35 – 15:05 | Exploring change over time with embeddings `[P]` |[Notebook](jupyterlite/content/02-Change.ipynb), [![JupyterLite](https://gist.githubusercontent.com/xiaohk/9b9f7c8fa162b2c3bc3251a5c9a799b2/raw/a7fca1d0a2d62c2b49f60c0217dffbd0fe404471/lite-badge-launch-small.svg)](assets/jupyterlite/index.html) |
+| 15:05 – 15:45 | Predictive modelling with embeddings `[P]` |[Notebook](jupyterlite/content/03-Predictive_modelling.ipynb), [![JupyterLite](https://gist.githubusercontent.com/xiaohk/9b9f7c8fa162b2c3bc3251a5c9a799b2/raw/a7fca1d0a2d62c2b49f60c0217dffbd0fe404471/lite-badge-launch-small.svg)](assets/jupyterlite/index.html) |
+
+## Data
+
+To follow this workshop, you will need to download the following Imago's data product:
+
+> [`Google Satellite Embedding V1 - London LSOAs (2020, 2024)`](https://data.imago.ac.uk/datasets/google-satellite-embedding-v1-london-lsoas-2020-2024)
+
+For this, follow these steps:
+
+1. [Log in](https://data.imago.ac.uk/auth/login?flow=cf1b2836-0dfe-4f55-90b0-f74713dda3be) at Imago's data catalogue. If you do not have an account, [sign up](https://data.imago.ac.uk/auth/registration) for free with an email address[^1].
+2. Head to the data product's [page](https://data.imago.ac.uk/datasets/google-satellite-embedding-v1-london-lsoas-2020-2024).
+3. You should now be able to see and download each year of embeddings at small
+   area under the Resources section.
+
+::: {.callout-tip}
+Once you are ready to graduate from our demo dataset, you can dive right into
+our newly released UK-wide data product of embeddings! You can access it at:
+
+> [https://data.imago.ac.uk/datasets/google-satellite-embedding-v1-small-areas-2017-2024](https://data.imago.ac.uk/datasets/google-satellite-embedding-v1-small-areas-2017-2024)
+
+This encompasses yearly embeddings from 2017 to 2024 at small area level (LSOA
+equivalent for all UK nations).
+
+:::
+
+
+[^1]: The login is free and we only use it to keep track of usage, which [our
+        funder](https://www.ukri.org/councils/esrc/) understandably wants to know about.
