@@ -9,5 +9,11 @@ dependencies:
   - geopandas
   - shapely
   - matplotlib
+  - contextily
   - folium
   - mapclassify
+  - rasterio
+  - earthpy
+  - seaborn
+  - scikit-learn
+  - requests
