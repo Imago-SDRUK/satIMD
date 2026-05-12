@@ -4,3 +4,4 @@ w07_pixelsToPatterns.ipynb
 __pycache__/
 .ipynb_checkpoints/
 .claude/
+.DS_Store
