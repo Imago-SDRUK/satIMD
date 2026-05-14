@@ -9,3 +9,7 @@ jupyterlite/build_jlite.log
 jupyterlite/serve_jlite.log
 .jupyterlite.doit.db
 jupyterlite/_output/
+
+/.quarto/
+**/*.quarto_ipynb
+**/*.swp
