@@ -5,3 +5,7 @@ __pycache__/
 .ipynb_checkpoints/
 .claude/
 .DS_Store
+jupyterlite/build_jlite.log
+jupyterlite/serve_jlite.log
+.jupyterlite.doit.db
+jupyterlite/_output/
