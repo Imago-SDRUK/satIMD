@@ -1,5 +1,11 @@
 jupyterlite/content/uk_lsoa_london_embeds_*.geojson
 jupyterlite/content/src_data
+w07_pixelsToPatterns.ipynb
 __pycache__/
 .ipynb_checkpoints/
 .claude/
+.DS_Store
+jupyterlite/build_jlite.log
+jupyterlite/serve_jlite.log
+.jupyterlite.doit.db
+jupyterlite/_output/

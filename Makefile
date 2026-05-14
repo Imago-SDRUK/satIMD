@@ -21,10 +21,21 @@ build_jlite:
 	# Clean previous build
 	rm -rf jupyterlite/_output jupyterlite/.jupyterlite.doit.db
 	# Build JupyterLite
-	cd jupyterlite && mamba run -n jlite jupyter lite build \
+	cd jupyterlite && /opt/conda/condabin/mamba run -n jlite jupyter lite build \
 		--XeusAddon.environment_file=environment.yaml \
+		--XeusAddon.mount_jupyterlite_content=True \
 		--contents content/ \
-		--output-dir=_output
+		--output-dir=_output \
+		2>&1 | tee build_jlite.log
+	# Register mount_0.tar.gz in empack_env_meta.json (workaround for jupyterlite-xeus bug)
+	/opt/conda/condabin/mamba run -n jlite python -c "\
+import json; \
+f='jupyterlite/_output/xeus/xeus-lite-wasm/empack_env_meta.json'; \
+d=json.load(open(f)); \
+d.setdefault('mounts',[{'filename':'mount_0.tar.gz'}]); \
+json.dump(d,open(f,'w'),indent=2) \
+"
 
 serve_jlite:
-	mamba run -n jlite jupyter lite serve --output-dir jupyterlite/_output
+	/opt/conda/condabin/mamba run -n jlite python jupyterlite/serve.py 8000 jupyterlite/_output \
+		2>&1 | tee jupyterlite/serve_jlite.log

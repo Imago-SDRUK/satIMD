@@ -1,0 +1,9 @@
+{
+  "LiteBuildConfig": {
+    "extra_ignore_contents": [
+      "/\\.claude",
+      "/\\.ipynb_checkpoints",
+      "/src_data"
+    ]
+  }
+}

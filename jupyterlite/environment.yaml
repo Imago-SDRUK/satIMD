@@ -6,8 +6,8 @@ dependencies:
   - xeus-python
   - numpy
   - pandas
+  - scipy
+  - scikit-learn
   - geopandas
-  - shapely
-  - matplotlib
-  - folium
-  - mapclassify
+  - xarray
+  - regionmask
