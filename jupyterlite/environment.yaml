@@ -6,14 +6,8 @@ dependencies:
   - xeus-python
   - numpy
   - pandas
-  - geopandas
-  - shapely
-  - matplotlib
-  - contextily
-  - folium
-  - mapclassify
-  - rasterio
-  - earthpy
-  - seaborn
+  - scipy
   - scikit-learn
-  - requests
+  - geopandas
+  - xarray
+  - regionmask
