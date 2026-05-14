@@ -8,19 +8,18 @@ project:
     - "index.qmd"
     - "CODE_OF_CONDUCT.md"
     - "CONTRIBUTING.md"
-    - "02-Lab.ipynb"
-    - "jupyterlite/content/01-Semantic_similarity.ipynb"
-    - "jupyterlite/content/02-Change.ipynb"
-    - "jupyterlite/content/03-Predictive_modelling.ipynb"
+    - "jupyterlite/content/lab_01-Manual_features.ipynb"
+    - "jupyterlite/content/lab_02-Model.ipynb"
+    - "data_prep/lab_00-Data_prep.ipynb"
 
 website:
-  title: "Imago Workshop on Satellite Embeddings"
+  title: "Deprivation from Space"
 
   page-footer:
     center: |
       [[Imago]{.green}](https://imago.ac.uk), part of the [[Smart Data Research UK]{.blue}](https://www.sdruk.ukri.org/) family.
 
-  repo-url: https://github.com/Imago-SDRUK/embeddings_workshop
+  repo-url: https://github.com/Imago-SDRUK/satIMD
   repo-branch: main
 
   search:
@@ -31,7 +30,7 @@ website:
     collapse-level: 1
     tools:
       - icon: github
-        href: https://github.com/Imago-SDRUK/embeddings_workshop
+        href: https://github.com/Imago-SDRUK/satIMD
     contents:
       - index.qmd
       - Materials.qmd
