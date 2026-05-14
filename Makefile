@@ -4,7 +4,7 @@ serve_site:
 	quarto preview --port 4000 --host 0.0.0.0
 build_site:
 	# Render slides
-	cd slides && quarto render imago_embeddings_workshop.qmd
+	cd slides && quarto render lab_setup.qmd
 	# Render site
 	quarto render
 	# Post-render provision

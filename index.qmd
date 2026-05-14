@@ -1,51 +1,32 @@
-# Workshop on Satellite Embeddings 
+# Welcome
 
-> _Embeddings for the rest of us_
-
+<div style="display:flex; align-items:center; gap:2rem;">
 <img src="assets/Imago-logo.png" alt="Imago Logo" width="300"/>
+<img src="assets/qr-satIMD.svg" alt="QR code linking to https://imago-sdruk.github.io/satIMD" width="120"/>
+</div>
 
 
-This page contains all you need to follow our hands-on workshop introducing satellite (geo-)embeddings and their practical applications, delivered at [GISRUK'26](https://2026.gisruk.org/). The workshop focuses on demystifying what satellite embeddings are, and how they can be used in real-world tasks such as semantic search, change detection, and predictive modelling, with live coding in Python.
+This page contains all you need to follow our hands-on workshop on predicting deprivation from space, delivered at [SPACERAISE'26](https://2026.gisruk.org/). This is the _Geo data lab (theme: Cities)_. The workshop explores how satellite data can be inserted into the decoding of socio-economic measures such as the UK's Index of Deprivation. The session is delivered through live coding in Python.
 
 ## Workshop Details
 
-**Date:** Tuesday 14th April 2026  
-**Time:** 13:45 – 15:45  
-**Location:**  
-Room G26, [Old Engineering Building (Y3)](https://2026.gisruk.org/venue)
-
-Come here to learn about:
-
-- What geo-embeddings are and why they matter  
-- How to work with embeddings in practical, real-world scenarios  
-- Techniques for semantic search and predictive modelling  
-- Hands-on Python labs  
-
-## Schedule
-
-| Time | Session |
-|------|--------|
-| 13:45 – 14:00 | Embeddings Overview: _what are they and why should I care?_ |
-| 14:00 – 14:15 | Interactive exploration of embeddings |
-| 14:15 – 14:35 | Semantic similarity `[P]` |
-| 14:35 – 15:05 | Exploring change over time with embeddings `[P]` |
-| 15:05 – 15:45 | Predictive modelling with embeddings `[P]` |
-
- `[P]` - Section based on Python
+**Date:** Monday 18th May 2026  
+**Time:** 16:00 – 17:30  
+**Content:** See [Materials](/Materials.qmd) 
 
 ## Requirements
 
 To get the most out of the workshop, participants should:
 
 - Bring a laptop  
-- Be comfortable with basic Python (no prior experience with embeddings required)
+- Be comfortable with basic Python 
 
 However, we think there's enough interesting stuff that does _not_ rely on
 Python, so don't make that deal breaker!
 
 ## 🛠️ Contributing
 
-This is an open resource hosted on [Github](https://github.com/Imago-SDRUK/embeddings_workshop). We welcome contributions of all kinds—code, documentation, ideas, and more!  
+This is an open resource hosted on [Github](https://github.com/Imago-SDRUK/satIMD). We welcome contributions of all kinds—code, documentation, ideas, and more!  
 Please read our [Contributing Guidelines](CONTRIBUTING.md) for step-by-step instructions on how to:
 
 - Fork and clone the repository

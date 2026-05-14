@@ -1,14 +1,163 @@
 # Materials
 
+<style>
+  .training-table {
+    width: 100%;
+    max-width: 880px;
+    margin: 1.5rem 0 2rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: 'Figtree', sans-serif;
+    font-size: 0.95rem;
+    color: #24226F;
+  }
+  .training-table thead th {
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #8C91A8;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.6rem 0.85rem;
+    border-bottom: 2px solid #E2E5F3;
+    background: transparent;
+  }
+  .training-table tbody td {
+    padding: 0.85rem;
+    border-bottom: 1px solid #E2E5F3;
+    vertical-align: middle;
+    line-height: 1.35;
+  }
+  .training-table tbody tr {
+    transition: background 0.12s ease;
+  }
+  .training-table tbody tr:hover {
+    background: #F5F6FB;
+  }
+  .training-table tbody tr.coming-soon {
+    color: #8C91A8;
+  }
+  .training-table tbody tr.coming-soon:hover {
+    background: transparent;
+  }
+
+  .training-table tbody tr.group-labs td:first-child {
+    border-left: 3px solid #03CEA3;
+    padding-left: 1rem;
+  }
+  .training-table tbody tr.group-labs.first td:first-child::before {
+    content: "Labs";
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #03CEA3;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+  }
+
+  .training-table .training-name {
+    font-weight: 600;
+    color: #24226F;
+  }
+  .training-table .training-topic {
+    color: #4a4a49;
+  }
+  .training-table tr.coming-soon .training-name,
+  .training-table tr.coming-soon .training-topic {
+    color: #8C91A8;
+    font-weight: 500;
+  }
+
+  .training-btn {
+    display: inline-block;
+    padding: 0.32rem 0.75rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+    white-space: nowrap;
+  }
+  .training-btn.read {
+    color: #24226F;
+    border-color: #24226F;
+    background: transparent;
+  }
+  .training-btn.read:hover,
+  .training-btn.read:focus-visible {
+    background: #24226F;
+    color: #FFFFFF;
+    outline: none;
+  }
+  .training-btn.launch {
+    color: #FFFFFF;
+    background: #FF8F42;
+    border-color: #FF8F42;
+  }
+  .training-btn.launch:hover,
+  .training-btn.launch:focus-visible {
+    background: #E67A2B;
+    border-color: #E67A2B;
+    outline: none;
+  }
+  .training-btn.disabled {
+    color: #B8BCD1;
+    background: transparent;
+    border-color: #E2E5F3;
+    pointer-events: none;
+    cursor: default;
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
+    .training-table thead { display: none; }
+    .training-table tbody td { display: block; padding: 0.4rem 0.85rem; border: none; }
+    .training-table tbody tr {
+      display: block;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #E2E5F3;
+    }
+    .training-table tbody tr.group-labs td:first-child {
+      padding-left: 1rem;
+    }
+  }
+</style>
+
 ## Content
 
-| Time | Session | `URL` |
-|------|--------|--------|
-| 13:45 – 14:00 | Embeddings Overview: _what are they and why should I care?_ | [Slides](slides/imago_embeddings_workshop.html) |
-| 14:00 – 14:15 | Interactive exploration of embeddings | [Imago Embedding Explorer](assets/imago-similarity-explorer.html) |
-| 14:15 – 14:35 | Semantic similarity `[P]` | [Notebook](jupyterlite/content/01-Semantic_similarity.ipynb), [![JupyterLite](https://gist.githubusercontent.com/xiaohk/9b9f7c8fa162b2c3bc3251a5c9a799b2/raw/a7fca1d0a2d62c2b49f60c0217dffbd0fe404471/lite-badge-launch-small.svg)](assets/jupyterlite/index.html) |
-| 14:35 – 15:05 | Exploring change over time with embeddings `[P]` |[Notebook](jupyterlite/content/02-Change.ipynb), [![JupyterLite](https://gist.githubusercontent.com/xiaohk/9b9f7c8fa162b2c3bc3251a5c9a799b2/raw/a7fca1d0a2d62c2b49f60c0217dffbd0fe404471/lite-badge-launch-small.svg)](assets/jupyterlite/index.html) |
-| 15:05 – 15:45 | Predictive modelling with embeddings `[P]` |[Notebook](jupyterlite/content/03-Predictive_modelling.ipynb), [![JupyterLite](https://gist.githubusercontent.com/xiaohk/9b9f7c8fa162b2c3bc3251a5c9a799b2/raw/a7fca1d0a2d62c2b49f60c0217dffbd0fe404471/lite-badge-launch-small.svg)](assets/jupyterlite/index.html) |
+<table class="training-table" aria-label="Workshop materials">
+  <thead>
+    <tr>
+      <th scope="col">Session</th>
+      <th scope="col">Topic</th>
+      <th scope="col">Read</th>
+      <th scope="col">Run in browser</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="training-name">Overview</span></td>
+      <td class="training-topic">Setup and introduction to the workshop</td>
+      <td><a class="training-btn read" href="slides/lab_setup.html">Slides</a></td>
+      <td><span class="training-btn disabled">N/A</span></td>
+    </tr>
+    <tr class="group-labs first">
+      <td><span class="training-name">Lab I</span></td>
+      <td class="training-topic">Deriving per-LSOA spectral features from Landsat 8 satellite imagery</td>
+      <td><a class="training-btn read" href="jupyterlite/content/lab_01-Manual_features.ipynb">Notebook</a></td>
+      <td><a class="training-btn launch" href="assets/jupyterlite/lab/index.html?path=lab_01-Manual_features.ipynb">Launch</a></td>
+    </tr>
+    <tr class="group-labs">
+      <td><span class="training-name">Lab II</span></td>
+      <td class="training-topic">Building and comparing predictive models of IMD deprivation</td>
+      <td><a class="training-btn read" href="jupyterlite/content/lab_02-Model.ipynb">Notebook</a></td>
+      <td><a class="training-btn launch" href="assets/jupyterlite/lab/index.html?path=lab_02-Model.ipynb">Launch</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Data
 
