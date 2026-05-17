@@ -3,6 +3,7 @@ jupyterlite/content/src_data
 w07_pixelsToPatterns.ipynb
 __pycache__/
 .ipynb_checkpoints/
+.virtual_documents/
 .claude/
 .DS_Store
 jupyterlite/build_jlite.log
