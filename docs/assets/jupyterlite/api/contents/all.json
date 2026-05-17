@@ -2,7 +2,7 @@
   "content": [
     {
       "content": null,
-      "created": "2026-05-17T22:28:28.536320Z",
+      "created": "2026-05-17T22:48:10.282891Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -16,7 +16,7 @@
     },
     {
       "content": null,
-      "created": "2026-05-17T22:28:28.547257Z",
+      "created": "2026-05-17T22:48:10.293379Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -30,7 +30,7 @@
     },
     {
       "content": null,
-      "created": "2026-05-17T22:28:28.524953Z",
+      "created": "2026-05-17T22:48:10.271919Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -44,7 +44,7 @@
     },
     {
       "content": null,
-      "created": "2026-05-17T22:28:28.528309Z",
+      "created": "2026-05-17T22:48:10.275029Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -58,21 +58,35 @@
     },
     {
       "content": null,
-      "created": "2026-05-17T22:28:28.529547Z",
+      "created": "2026-05-17T22:48:10.343378Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-05-17T22:23:54.753499Z",
+      "last_modified": "2026-05-17T22:45:26.381934Z",
+      "mimetype": "application/geo+json",
+      "name": "uk_lsoa_london_embeds_2020.geojson",
+      "path": "uk_lsoa_london_embeds_2020.geojson",
+      "size": 19603962,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-05-17T22:48:10.276379Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-05-17T22:47:41.662453Z",
       "mimetype": null,
       "name": "lab_01-Manual_features.ipynb",
       "path": "lab_01-Manual_features.ipynb",
-      "size": 4284749,
+      "size": 4284620,
       "type": "notebook",
       "writable": true
     },
     {
       "content": null,
-      "created": "2026-05-17T22:28:28.535436Z",
+      "created": "2026-05-17T22:48:10.282016Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -85,11 +99,11 @@
       "writable": true
     }
   ],
-  "created": "2026-05-17T22:28:28.538034Z",
+  "created": "2026-05-17T22:48:10.338378Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-05-17T22:28:28.538034Z",
+  "last_modified": "2026-05-17T22:48:10.338378Z",
   "mimetype": null,
   "name": "",
   "path": "",
