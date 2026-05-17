@@ -141,23 +141,6 @@
       "subdir": "noarch"
     },
     {
-      "name": "requests",
-      "version": "2.34.1",
-      "build": "pyhcf101f3_0",
-      "filename_stem": "requests-2.34.1-pyhcf101f3_0",
-      "filename": "requests-2.34.1-pyhcf101f3_0.tar.gz",
-      "channel": "https://repo.prefix.dev/conda-forge",
-      "depends": [
-        "python >=3.10",
-        "certifi >=2023.5.7",
-        "charset-normalizer >=2,<4",
-        "idna >=2.5,<4",
-        "urllib3 >=1.26,<3",
-        "python"
-      ],
-      "subdir": "noarch"
-    },
-    {
       "name": "xyzservices",
       "version": "2026.3.0",
       "build": "pyhd8ed1ab_0",
@@ -193,6 +176,18 @@
         "nlohmann_json-abi 3.12.0"
       ],
       "subdir": "emscripten-wasm32"
+    },
+    {
+      "name": "decorator",
+      "version": "5.3.0",
+      "build": "pyhd8ed1ab_0",
+      "filename_stem": "decorator-5.3.0-pyhd8ed1ab_0",
+      "filename": "decorator-5.3.0-pyhd8ed1ab_0.tar.gz",
+      "channel": "https://repo.prefix.dev/conda-forge",
+      "depends": [
+        "python >=3.10"
+      ],
+      "subdir": "noarch"
     },
     {
       "name": "pytz",
@@ -563,18 +558,6 @@
       "subdir": "noarch"
     },
     {
-      "name": "decorator",
-      "version": "5.2.1",
-      "build": "pyhd8ed1ab_0",
-      "filename_stem": "decorator-5.2.1-pyhd8ed1ab_0",
-      "filename": "decorator-5.2.1-pyhd8ed1ab_0.tar.gz",
-      "channel": "https://repo.prefix.dev/conda-forge",
-      "depends": [
-        "python >=3.9"
-      ],
-      "subdir": "noarch"
-    },
-    {
       "name": "proj",
       "version": "9.8.1",
       "build": "h0cc25f9_0",
@@ -650,6 +633,23 @@
       "subdir": "emscripten-wasm32"
     },
     {
+      "name": "requests",
+      "version": "2.34.2",
+      "build": "pyhcf101f3_0",
+      "filename_stem": "requests-2.34.2-pyhcf101f3_0",
+      "filename": "requests-2.34.2-pyhcf101f3_0.tar.gz",
+      "channel": "https://repo.prefix.dev/conda-forge",
+      "depends": [
+        "python >=3.10",
+        "certifi >=2023.5.7",
+        "charset-normalizer >=2,<4",
+        "idna >=2.5,<4",
+        "urllib3 >=1.26,<3",
+        "python"
+      ],
+      "subdir": "noarch"
+    },
+    {
       "name": "rasterio",
       "version": "1.5.0",
       "build": "np23py313h73aa9f6_0",
@@ -717,19 +717,6 @@
       "build": "py313hb42c9ef_1",
       "filename_stem": "kiwisolver-1.5.0-py313hb42c9ef_1",
       "filename": "kiwisolver-1.5.0-py313hb42c9ef_1.tar.gz",
-      "channel": "https://repo.prefix.dev/emscripten-forge-4x",
-      "depends": [
-        "emscripten-abi >=4,<5.0a0",
-        "python_abi 3.13.* *_cp313"
-      ],
-      "subdir": "emscripten-wasm32"
-    },
-    {
-      "name": "numpy",
-      "version": "2.4.4",
-      "build": "py313hcf5bae3_0",
-      "filename_stem": "numpy-2.4.4-py313hcf5bae3_0",
-      "filename": "numpy-2.4.4-py313hcf5bae3_0.tar.gz",
       "channel": "https://repo.prefix.dev/emscripten-forge-4x",
       "depends": [
         "emscripten-abi >=4,<5.0a0",
@@ -944,6 +931,19 @@
         "python"
       ],
       "subdir": "noarch"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.5",
+      "build": "py313hcf5bae3_0",
+      "filename_stem": "numpy-2.4.5-py313hcf5bae3_0",
+      "filename": "numpy-2.4.5-py313hcf5bae3_0.tar.gz",
+      "channel": "https://repo.prefix.dev/emscripten-forge-4x",
+      "depends": [
+        "emscripten-abi >=4,<5.0a0",
+        "python_abi 3.13.* *_cp313"
+      ],
+      "subdir": "emscripten-wasm32"
     },
     {
       "name": "pysocks",
