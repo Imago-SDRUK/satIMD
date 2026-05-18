@@ -146,70 +146,22 @@ Dani Arribas-Bel, Andrea Nasuto
 <p>across social research and policy</p>
 </section>
 
-<section id="todays-vibes" class="title-slide slide level1 dark center">
-<h1>Today’s vibes</h1>
-<!-- (2min) -->
-<ul>
-<li><span class="hlg">Intuition</span> behind what satellite embeddings <em>are</em></li>
-<li>A (sales) <span class="hlg">pitch</span> for why they’re cool</li>
-<li><span class="hlg">No equations</span> (and very little technicalities)</li>
-</ul>
-</section>
-
-<section id="disclaimer" class="title-slide slide level1 dark center">
-<h1><span class="hlg-green">Disclaimer</span></h1>
-<ul>
-<li>This is all <em>rapidly</em> changing</li>
-<li>I’m NO computer scientist</li>
-<li>I’ll start abstract, bear with me, <span class="green"><em>it’ll have a point!</em></span></li>
-</ul>
+<section id="two-parts" class="title-slide slide level1 center">
+<h1>Two parts</h1>
+<ol type="1">
+<li>Building our own features from satellites, an illustration</li>
+<li>Using satellites to help predict deprivation</li>
+</ol>
 </section>
 
 <section>
-<section id="what-are-embeddings" class="title-slide slide level1 center">
-<h1><span class="hlg"><em>What</em></span> are embeddings? <!-- (20min) --></h1>
-<p>A crash course</p>
-</section>
-<section id="autoencoders" class="slide level2">
-<h2>Autoencoders</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<blockquote>
-<p><em>[…] neural network that is trained to attempt to copy its input to its output.</em></p>
-</blockquote>
-<p><span class="citation" data-cites="Goodfellow-et-al-2016">@Goodfellow-et-al-2016</span></p>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png"></p>
-<figcaption>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png">Wikimedia</a></figcaption>
-</figure>
-</div>
-</div></div>
-<p>Late 80s, early 90s.</p>
-</section>
-<section id="deep-autoencoders-for-imagery" class="slide level2">
-<h2>Deep autoencoders (for imagery)</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
+<section id="from-this-morning" class="title-slide slide level1 center">
+<h1>From this morning…</h1>
 <ul>
-<li>Within the blast radious of the deep learning revolution in the 2010s</li>
-<li>Deep convolutional AE, ViT <span class="citation" data-cites="50650">[@50650]</span>, MAE <span class="citation" data-cites="he2022masked">[@he2022masked]</span></li>
-<li>AEs start being pre-trained (the <strong>P</strong> in “ChatGPT”!)</li>
+<li>Satellites supporting social science</li>
+<li>OBIA Vs. Embeddings</li>
 </ul>
-</div><div class="column" style="width:30%;">
-<p><img data-src="../assets/attention_paper.png"></p>
-</div></div>
 </section>
-<section id="foundation-models" class="slide level2">
-<h2>Foundation models</h2>
-<ul>
-<li>Self-supervised<sup>1</sup></li>
-<li>Pre-train once, fine-tune <em>downstream</em> many times<sup>2</sup></li>
-<li>Rising interest in Remote Sensing/Earth Observation <span class="citation" data-cites="rolf2024missioncriticalsatellite">[@rolf2024missioncriticalsatellite]</span></li>
-</ul>
-<p>All the rage in 2020s (and partially why embeddings are so hot now)</p>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><em>“Life’s too short for labels!”</em></p></li><li id="fn2"><p><em>“Life’s too short from training from scratch every time!”</em></p></li></ol></aside></section>
 <section id="geo-embeddings" class="slide level2">
 <h2>(Geo-)Embeddings</h2>
 <div class="columns">
@@ -228,47 +180,34 @@ Dani Arribas-Bel, Andrea Nasuto
 </ul>
 </div></div>
 </section></section>
-<section>
-<section id="why-should-i-care" class="title-slide slide level1 center">
-<h1><span class="hlg"><em>Why</em></span> should I care? <!-- (15min) --></h1>
-
-</section>
-<section id="step-back-for-a-second" class="slide level2">
-<h2>Step back for a second</h2>
-<p>The year is 2026…</p>
+<section id="predictive-setup" class="title-slide slide level1 center">
+<h1>Predictive setup</h1>
+<p>Standard ML task</p>
 <ul>
-<li class="fragment">We <span class="hlg">need</span> more <span class="hlg">data</span> more than ever!</li>
-<li class="fragment">We <span class="hlg">have</span> more <span class="hlg">data</span> than ever!</li>
-<li class="fragment">But… “Mo Data, Mo Problems”?</li>
+<li>Predictive method (gradient boosted trees)</li>
+<li>Performance metrics</li>
+<li>Train/test split w/ spatial blocking</li>
 </ul>
 </section>
-<section id="embeddings-promise-klemmer2025earthembeddings" class="slide level2">
-<h2>Embeddings’ promise <span class="citation" data-cites="klemmer2025earthembeddings">[@klemmer2025earthembeddings]</span></h2>
-<ol type="1">
-<li>Dimensionality reduction/compression</li>
-<li>Data fusion</li>
-<li>Interpolation across unseen data</li>
-<li>Interoperability across modalities</li>
-</ol>
+
+<section id="predictive-plan" class="title-slide slide level1 center">
+<h1>Predictive plan</h1>
+<ul>
+<li><span class="math inline">\(IMD ~ SocioEconomic\)</span></li>
+<li><span class="math inline">\(IMD ~ OBIA\)</span></li>
+<li><span class="math inline">\(IMD ~ Embeddings\)</span></li>
+<li><span class="math inline">\(IMD ~ SocioEconomic + OBIA\)</span></li>
+<li><span class="math inline">\(IMD ~ SocioEconomic + Embeddings\)</span></li>
+</ul>
 </section>
-<section id="embeddings-promise" class="slide level2">
-<h2>Embeddings’ promise</h2>
-<ol type="1">
-<li>Imagery <em>as spreadsheets!</em></li>
-<li>Imagery that <em>fits in your laptop</em><sup>1</sup></li>
-<li>Imagery that talks to other imagery (and other kind of data!)</li>
-</ol>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>Kind of…</p></li></ol></aside></section></section>
+
 <section id="thanks" class="title-slide slide level1 dark center">
 <h1>Thanks!</h1>
-<p><a href="https://darribas.org"><span class="grey">Dani Arribas-Bel</span></a></p>
 <p><span class="green">Imago, SDR-UK Data Service for Imagery</span></p>
 <p><a href="https://imago.ac.uk"><span class="orange"><code>imago.ac.uk</code></span></a></p>
 <p><a href="../Materials.html">🏠</a></p>
 
 </section>
-
-
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
